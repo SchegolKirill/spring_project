@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changeset/createpersons.yml
+  - include:
+      file: db/changelog/changeset/updatepersons.yml
+  - include:
+      file: db/changelog/changeset/persons_update_passport_column.yml
+  - include:
+      file: db/changelog/changeset/create_passports_table.yml
+  - include:
+      file: db/changelog/changeset/create_departments_table.yml
+  - include:
+      file: db/changelog/changeset/add_department_to_persons.yml

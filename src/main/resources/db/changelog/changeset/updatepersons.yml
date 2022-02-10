@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: persons
+      author: Kirill Schegol
+      changes:
+        - addColumn:
+            tableName: persons
+            columns:
+              - column:
+                  name: surname
+                  type: varchar(100)
+              - column:
+                  name: patronymic
+                  type: varchar(100)
+              - column:
+                  name: creation_date
+                  type: date
+              - column:
+                  name: password
+                  type: varchar(100)
+              - column:
+                  name: passport
+                  type: varchar(100)
+              - column:
+                  name: address
+                  type: varchar(100)
+              - column:
+                  name: mobile
+                  type: varchar(100)

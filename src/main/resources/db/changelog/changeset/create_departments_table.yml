@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_departments_table
+      author: Kirill Schegol
+      changes:
+        - createTable:
+            tableName: departments
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(50)

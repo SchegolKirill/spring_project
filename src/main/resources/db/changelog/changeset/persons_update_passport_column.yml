@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: update_passport_column
+      author: Kirill Schegol
+      changes:
+        - renameColumn:
+            tableName: persons
+            oldColumnName : passport
+            newColumnName : passport_id
+        - modifyDataType:
+            columnName: passport_id
+            newDataType: int
+            tableName: persons
+            constraints:
+              foreignKeyName: passport_fk
+              referencedTableName: passports
+              referencedColumnNames: id

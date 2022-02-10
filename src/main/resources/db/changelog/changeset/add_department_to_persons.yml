@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: add_department_to_passports
+      author: Kirill Schegol
+      changes:
+        - addColumn:
+            tableName: persons
+            columns:
+              - column:
+                  name: department_id
+                  type: int
+                  constraints:
+                    foreignKeyName: department_fk
+                    referencedTableName: departments
+                    referencedColumnNames: id

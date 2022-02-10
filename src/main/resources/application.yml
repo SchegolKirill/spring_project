@@ -1,0 +1,15 @@
+#spring:
+#  liquibase:
+#    enabled: true
+#
+#  datasource:
+#    url: jdbc:h2:file:./db #jdbc:mysql://localhost:3306/db_example # в корне проект файл бд db.mv.db
+#    username: root # имя пользователя консоли
+#    password: password # пароль консоли
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect #org.hibernate.dialect.MySqlDialect
+#    hibernate:
+#      ddl-auto: none
+#  h2:
+#    console:
+#      enabled: true

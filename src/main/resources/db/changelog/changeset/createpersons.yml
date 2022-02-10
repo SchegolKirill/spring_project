@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: persons
+      author: Kirill Schegol
+      changes:
+        - createTable:
+            tableName: persons
+            columns:
+              - column:
+                  name: id
+                  type: int unsigned
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(50)
+              - column:
+                  name: age
+                  type: int
